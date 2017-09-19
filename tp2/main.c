@@ -7,14 +7,8 @@ int main()
 {
     char seguir='s';
     int opcion=0;
-    for(estado==0)
-    {
-        int i;
-        for(i=0;i<5;i++)
-        {
-
-        }
-    }
+    int texto[100]= {}; //texto principal de pantalla
+    int resultadoOperacion=0;
 
     while(seguir=='s')
     {
@@ -29,7 +23,23 @@ int main()
         switch(opcion)
         {
             case 1:
-
+                 resultadoOperacion = (agregarPersona(listaPersonas));
+                if (resultadoOperacion == 1)         //En funcion de lo que devuelva agregarPersona mostramos distintos mensajes.
+                {
+                    strcpy(texto, "Persona dada de alta correctamente!\n");
+                }
+                else if (resultadoOperacion == -1)
+                {
+                    strcpy(texto,"La memoria llego al maximo. Elimine algun registro e intente de nuevo.\n");
+                }
+                else if (resultadoOperacion == -2)
+                {
+                    strcpy(texto,"Se cancelo el alta de la persona.\n");
+                }
+                else if (resultadoOperacion == -3)
+                {
+                    strcpy(texto, "La persona ya se encuentra cargada.\n");
+                }
                 break;
             case 2:
                 break;

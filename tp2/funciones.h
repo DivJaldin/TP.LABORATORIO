@@ -6,7 +6,7 @@ typedef struct {
     char nombre[50];
     int edad;
     int estado;
-    int dni;
+    long int dni;
 
 }EPersona;
 
@@ -24,5 +24,6 @@ int obtenerEspacioLibre(EPersona lista[]);
  * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
  */
 int buscarPorDni(EPersona lista[], int dni);
+void ordenarListaPersonas(EPersona[]);
 
 #endif // FUNCIONES_H_INCLUDED
