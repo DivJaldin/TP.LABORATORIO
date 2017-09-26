@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1506382065 source:d:\modelo de parcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1506380610 source:d:\modelo de parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1506385266 d:\modelo de parcial\funciones.h
+
